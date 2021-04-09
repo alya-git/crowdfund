@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  
+  <title>Crowdfunding Page</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/logo.svg" alt="crowdfund logo">
+        </div>
+  
+        <div class="nav-btn" id="nav-btn">
+          <img src="images/icon-hamburger.svg" alt="" id="hamburger-icon" class="show">
+          <img src="images/icon-close-menu.svg" alt="" id="menu-close-icon">
+        </div>
+  
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- <main> -->
+  <div class="main-content">
+    <div class="container">
+      <article class="card project-summary">
+          <img src="images/crowdfunderlogo.png" alt="" class="project-logo">
+          <h1>Bangalore Tree Planting</h1>
+          <p>Let's plant 10,000 trees by 2022!</p>
+
+          <div class="action">
+            <button class="btn" id="back-project-btn">Back this project</button>
+
+            <div class="bookmark" id="bookmark">
+              <svg class="bookmark-icon" width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#2F2F2F" cx="28" cy="28" r="28"/><path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+              <span class="collapse-bookmark">Bookmark</span>
+            </div>
+          </div>
+      </article>
+
+      <article class="card project-stats">
+        <div class="flex-container">
+          <div class="stat">
+            <h3 id="current-money">Rs. 1,89,914</h3>
+            <span id="target-money">of Rs. 5,00,000 backed</span>
+          </div>
+          
+          <div class="stat">
+            <h3 id="total-backers"> 5,007</h3>
+            <span>total backers</span>
+          </div>
+          
+          <div class="stat">
+            <h3>96</h3>
+            <span>days left</span>
+          </div>
+        </div>
+
+        <div class="progress-bar">
+          <div class="indicator" id="indicator"></div>
+        </div>
+      </article>
+
+      <article class="card project-details">
+        <h4>About this project</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, eius assumenda dignissimos, sequi nesciunt recusandae temporibus laudantium iure veritatis officiis dolore unde omnis, quasi amet dolorem minima repellendus aliquid nisi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, aspernatur neque voluptatum, nisi dolores eaque delectus veritatis iusto explicabo ad tempore libero, labore ab? Voluptatem obcaecati dolorum sunt fugiat nostrum.
+        </p>
+
+        <div class="project-options">
+          <fieldset class="card option">
+            <div class="card-title">
+              <h4>Tulsi Plant</h4>
+              <span class="pledge-price">Pledge Rs. 125 or more</span>
+            </div>
+
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quis incidunt quidem officiis eligendi doloribus totam odit doloremque voluptate aliquam adipisci optio nam voluptatibus quos culpa modi, et ipsam ipsa.</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="quantity-left"><span class="quantity">4101</span>left</div>
+              <button class="btn option-selection-btn">Select Reward</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="card option">
+            <div class="card-title">
+              <h4>Peepal Tree</h4>
+              <span class="pledge-price">Pledge Rs. 575 or more</span>
+            </div>
+
+            <div class="card-body">
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae nam ex hic reiciendis quisquam cumque sed et architecto molestias quaerat corporis, magnam nobis quia placeat nesciunt illo. Illum, totam.</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="quantity-left"><span class="quantity">3864</span>left</div>
+              <button class="btn option-selection-btn">Select Reward</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="card option">
+            <div class="card-title">
+              <h4>Jacaranda Tree</h4>
+              <span class="pledge-price">Pledge Rs. 1200 or more</span>
+            </div>
+
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nihil dolorem ea ducimus quasi laudantium nostrum rerum tenetur nobis, numquam dolorum doloribus tempore voluptatibus ab? Mollitia ut cupiditate quas architecto.</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="quantity-left"><span class="quantity">0</span>left</div>
+              <button class="btn option-selection-btn">Out of Stock</button>
+            </div>
+          </fieldset>
+
+        </div>
+      </article>
+    </div>
+  </div>
+  <!-- </main> -->
+
+
+  <!-- Selection modal start -->
+  <div class="selection-modal">
+    <article class="card modal-content">
+      <svg class="modal-close-icon" id="close-icon" width="15" height="15" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4"/>
+      </svg>
+
+      <h3>Back this project</h3>
+      <p>Want to support us in bringing back Bengaluru's green cover?</p>
+
+      <form class="selection-form">
+        <fieldset>
+          <label for="pledgeChoice1" class="custom-radio-btn card">
+            <input type="radio" id="pledgeChoice1"  name="pledge" value="Pledge with no reward">
+            <div class="card-title bold-black-text">
+              <span class="checkmark"></span>
+              Pledge with no reward
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi hic omnis, ea tempora ratione consequatur magni dolor similique? Obcaecati commodi aliquam laboriosam quia error sequi laudantium unde aut similique perspiciatis?</p>
+          </label>
+        </fieldset>
+    
+        <fieldset>
+          <label for="pledgeChoice2" class="custom-radio-btn card" id="bambo-stand">
+            <input type="radio" id="pledgeChoice2" name="pledge" value="Bamboo Stand">
+            <div class="card-title bold-black-text">
+              <span class="checkmark"></span>
+              <div class="flex-container">
+                Tulsi Plant
+                <span class="pledge-price">Pledge Rs. 125 or more</span>
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus praesentium aut dolorem, quaerat autem! Repellendus, amet perferendis. Amet quibusdam ullam neque architecto. Sit est inventore quae sint, laborum exercitationem!</p>
+            <p class="quantity-left"><span class="quantity">4101</span> left</p>
+
+            <!-- Selected pledge start -->
+            <div class="selected-pledge">
+              <span>Enter your pledge</span>
+              <div class="selected-pledge-form">
+                <input type="number"  id="bamboo-stand-pledge">
+                <button type="submit" class="btn">Continue</button>
+              </div>
+            </div>
+          <!-- Selected pledge end -->
+        </label>
+        </fieldset>
+    
+        <fieldset>
+          <label for="pledgeChoice3" class="custom-radio-btn card" id="black-edition-stand">
+            <input type="radio" id="pledgeChoice3" name="pledge" value="Black Edition Stand">
+            <div class="card-title bold-black-text">
+              <span class="checkmark"></span>
+              <div class="flex-container">
+                Peepal Tree
+                <span class="pledge-price">Pledge Rs. 575 or more</span>
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio enim cupiditate vitae asperiores dolorum, necessitatibus incidunt at. Ab doloribus corrupti modi rem quisquam fugit! Dolor rem facere odio cum adipisci.</p>
+            <p class="quantity-left"><span class="quantity">3864</span> left</p>
+
+            <!-- Selected pledge start -->
+            <div class="selected-pledge">
+              <span>Enter your pledge</span>
+              <div class="selected-pledge-form">
+                <input type="number" id="black-edition-stand-pledge">
+                <button type="submit" class="btn">Continue</button>
+              </div>
+            </div>
+            <!-- Selected pledge end -->
+        </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="pledgeChoice4" class="custom-radio-btn card" id="mahogany-special-edition">
+            <input type="radio" id="pledgeChoice4" name="pledge" value="Mahogany Special Edition">
+            <div class="card-title bold-black-text">
+              <span class="checkmark"></span>
+              <div class="flex-container">
+                Jacaranda Tree
+                <span class="pledge-price">Pledge Rs. 1200 or more</span>
+              </div>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos distinctio deserunt aliquid expedita mollitia dolor obcaecati architecto maxime assumenda reprehenderit! Distinctio iste illum asperiores iusto. Eius, minus quas. Consectetur, expedita?</p>
+            <p class="quantity-left"><span class="quantity">0</span> left</p>
+
+            <!-- Selected pledge start -->
+            <div class="selected-pledge">
+              <span>Enter your pledge</span>
+              <div class="selected-pledge-form">
+                <input type="number" id="mahogany-special-edition-pledge">
+                <button type="submit" class="btn">Continue</button>
+              </div>
+            </div>
+            <!-- Selected pledge end -->
+          </label>
+        </fieldset>
+      </form>
+    </article>
+  </div>
+  <!-- Selection modal end -->
+
+
+  
+
+  <!-- Success modal start -->
+  <div class="success-modal">
+    <article class="card modal-content">
+      <img src="images/icon-check.svg" alt="" class="check-icon">
+
+      <h2>Thanks for your support!</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nisi molestias commodi quos nam quas, iure distinctio odit ipsam, veritatis consequuntur quaerat sint quo, autem neque nostrum necessitatibus reprehenderit ad!</p>
+
+      <button class="btn" id="success-modal-btn">Got it!</button>
+    </article>
+  </div>
+  <!-- Success modal end -->
+
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
